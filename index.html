@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISHING - Architect & Consultant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        const navLinks = document.querySelector('.nav-links');
+        const navbar = document.querySelector('.navbar');
+        navbar.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</head>
+
+
+<body>
+    <!-- Navigation -->
+    <style>
+        .bebas-neue-regular {
+            font-family: "Bebas Neue";
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+
+    <nav class="navbar bebas-neue-regular">
+        <div class="container">
+            <div class="logo">
+                ISHING
+                <span class="logo-subheading">Architect & Consultant</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero bebas-neue-regular">
+        <div class="hero-content">
+            <h1>Designing Spaces That Inspire</h1>
+            <p>Creating innovative architectural solutions for modern living</p>
+            <a href="#projects" class="btn">View Our Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about bebas-neue-regular">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>ArchVista is an award-winning architecture firm dedicated to creating exceptional spaces that
+                        blend functionality with aesthetic excellence. With over 15 years of experience, our team of
+                        skilled architects transforms visions into reality.</p>
+                    <p>We specialize in residential, commercial, and sustainable design projects, ensuring every
+                        structure we create enhances its environment and meets our clients' needs.</p>
+                </div>
+                <div class="about-image">
+                    <img src="office.jpg" alt="Architecture Office">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects bebas-neue-regular">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="arch.jpeg" alt="Project 1">
+                    <h3>Modern Residence</h3>
+                    <p>Luxury home design with sustainable features</p>
+                </div>
+                <div class="project-item">
+                    <img src="arch.jpeg" alt="Project 2">
+                    <h3>Corporate Tower</h3>
+                    <p>Innovative office space in urban setting</p>
+                </div>
+                <div class="project-item">
+                    <img src="arch.jpeg" alt="Project 3">
+                    <h3>Public Library</h3>
+                    <p>Community-focused architectural design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact bebas-neue-regular">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container bebas-neue-regular">
+            <div class="footer-grid">
+                <!-- Logo Section -->
+                <div class="footer-logo">
+                    <h3 class="logo">ISHING</h3>
+                    <p class="tagline">Designing the Future</p>
+                </div>
+
+                <!-- Blog Links -->
+                <div class="footer-links">
+                    <h4>Blogs</h4>
+                    <ul>
+                        <li><a href="#blog1">Latest Projects</a></li>
+                        <li><a href="#blog2">Design Trends</a></li>
+                        <li><a href="#blog3">Sustainable Architecture</a></li>
+                        <li><a href="#blog4">Client Stories</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    <p>Email: <a href="mailto:info@archvista.com">info@ishing.com</a></p>
+                </div>
+
+                <!-- Office Address -->
+                <div class="footer-address">
+                    <h4>Our Office</h4>
+                    <p>Tengapara</p>
+                    <p>Suite 400</p>
+                    <p>Kokrajhar Assam</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ISHING. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
